@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="calculator">
+            <button id="toggle-button" class="mode-toggle">Cambiar Estilo 🎨</button>
+            
+            <h1>CALCULADORA</h1>
+
+            <div class="input-group">
+                <label>Primer número</label>
+                <input type="text" id="num1" placeholder="0" readonly>
+            </div>
+
+            <div class="button-row" id="ops-container">
+                <button class="op-btn sym green" data-op="+" data-sym="+">+</button>
+                <button class="op-btn sym yellow" data-op="-" data-sym="-">-</button>
+                <button class="op-btn sym blue" data-op="*" data-sym="×">×</button>
+                <button class="op-btn sym purple" data-op="/" data-sym="÷">÷</button>
+
+                <button class="op-btn txt green-border" data-op="+" data-sym="+">SUMA</button>
+                <button class="op-btn txt yellow-border" data-op="-" data-sym="-">RESTA</button>
+                <button class="op-btn txt blue-border" data-op="*" data-sym="×">MULTIPLICACIÓN</button>
+                <button class="op-btn txt purple-border" data-op="/" data-sym="÷">DIVISIÓN</button>
+            </div>
+
+            <div class="input-group">
+                <label>Segundo número</label>
+                <input type="text" id="num2" placeholder="0" readonly>
+            </div>
+
+            <button id="equal">=</button>
+
+            <div class="input-group">
+                <label>Resultado</label>
+                <input type="text" id="result" class="res-input" readonly placeholder="Esperando...">
+            </div>
+
+            <div class="keyboard">
+                <div class="row">
+                    <button class="key">7</button>
+                    <button class="key">8</button>
+                    <button class="key">9</button>
+                </div>
+                <div class="row">
+                    <button class="key">4</button>
+                    <button class="key">5</button>
+                    <button class="key">6</button>
+                </div>
+                <div class="row">
+                    <button class="key">1</button>
+                    <button class="key">2</button>
+                    <button class="key">3</button>
+                </div>
+                <div class="row">
+                    <button class="key">0</button>
+                    <button class="key">.</button>
+                    <button class="key del-key">←</button>
+                </div>
+                <button id="clear-btn">BORRAR TODO (Esc)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
